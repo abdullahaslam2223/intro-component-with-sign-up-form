@@ -1,0 +1,125 @@
+:root {
+    /* colors */
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%);
+    --grayBlue: hsl(246, 25%, 77%);
+
+    /* font family */
+    --poppins: 'Poppins', sans-serif;
+
+    /* mobile breakpoint */
+    --mobile: 375px;
+}
+
+/* Generic styling starts */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--poppins);
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Generic styling ends */
+
+/* Container styling starts */
+.container {
+    height: 100vh;
+    padding: 0 9rem;
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: var(--red);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+/* Container styling ends */
+
+
+/* Content styling starts */
+.content {
+    color: white;
+    width: 50%;
+}
+
+.content h1 {
+    font-size: 3rem;
+}
+
+.content p {
+    margin-top: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: rgb(238, 235, 235);
+}
+
+/* Content styling ends */
+
+
+/* Signup form styling starts */
+.signup {
+    width: 50%;
+}
+
+.signup h4 {
+    text-align: center;
+    background-color: var(--blue);
+    color: white;
+    padding: 1rem 0;
+    border-radius: 0.6rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 0.5rem rgba(14, 13, 13, 0.13);
+
+}
+
+.signup span {
+    font-weight: 300;
+}
+
+.signupForm {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.6rem;
+    box-shadow: 0px 0.4rem rgba(14, 13, 13, 0.13);
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.signupForm p {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 0.7rem;
+    color: rgb(139, 136, 136);
+}
+
+.signupForm p a {
+    color: var(--red);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.signupForm input {
+    width: 27rem;
+    margin: auto;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+    border: 1px solid rgba(139, 136, 136, 0.575);
+    font-weight: 800;
+}
+
+.signupForm input[type="submit"] {
+    background-color: var(--green);
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 400;
+    width: 28.8rem;
+    box-shadow: 0 0.15rem hsl(154, 57%, 43%);
+}
+
+/* Signup form styling ends */
